@@ -1,0 +1,60 @@
+{
+  "icon": "icon.svg",
+  "displayName": "Image Annotation",
+  "tagName": "image-annotation",
+  "ValuePropertyID": "Value",
+  "supports": [
+    "Property",
+    "Width",
+    "Height",
+    "IsVisible",
+    "IsEnabled",
+    "DataBinding",
+    "IsReadOnly",
+    "Value"
+  ],
+  "events": [
+    {
+      "id": "Changed",
+      "friendlyname": "Value Changed"
+    }
+  ],
+  "properties": [
+    {
+      "id": "imageSourceUrl",
+      "friendlyname": "Image Source URL",
+      "type": "string",
+      "initialvalue": ""
+    },
+    {
+      "id": "Value",
+      "friendlyname": "Value",
+      "type": "text",
+      "inputlength": "4000",
+      "initialvalue": "",
+      "changesdisplay": true,
+      "refreshdisplay": "true"
+    }
+  ],
+  "methods": [
+    {
+      "id": "refreshData",
+      "displayname": "Refresh Data",
+      "returntype": "None",
+      "description": "",
+      "parameters": []
+    }
+  ],
+  "runtimeScriptFileNames": [
+    "control.js"
+  ],
+  "runtimeStyleFileNames": [
+    "control.css", "annotorious.css"
+  ],
+  "designtimeScriptFileNames": [
+    "control.js"
+  ],
+  "designtimeStyleFileNames": [
+    "control.css", "annotorious.css"
+  ]
+}

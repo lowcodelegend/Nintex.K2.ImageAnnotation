@@ -1,0 +1,112 @@
+image-annotation .image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* Text popup under the rectangle */
+.anno-text-editor {
+  position: absolute;
+  max-width: 260px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  z-index: 20;
+}
+
+.anno-text-editor .anno-textarea {
+  width: 100%;
+  min-height: 40px;
+  max-height: 120px;
+  resize: vertical;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+/* Delete button bottom-right */
+.anno-delete-button {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 30;
+  border: 1px solid #ccc;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.anno-delete-button:hover:not(:disabled) {
+  background: #fbe9e9;
+  border-color: #e06666;
+}
+
+.anno-delete-button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-height: 150px;
+  background: #f5f5f5;
+  border: 1px dashed #ccc;
+  box-sizing: border-box;
+}
+
+.image-wrapper img.annotatable-image {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.image-wrapper .image-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  padding: 4px 8px;
+  pointer-events: none;
+}
+
+/* When an image is present, show it and hide the placeholder */
+.image-wrapper.has-image {
+  border-style: solid;
+  background: #fff;
+}
+
+.image-wrapper.has-image img.annotatable-image {
+  display: block;
+}
+
+.image-wrapper.has-image .image-placeholder {
+  display: none;
+}
+
+
+:host {
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    .image-wrapper {
+      position: relative;
+      display: inline-block;
+      max-width: 100%;
+    }
+
+    img.annotatable-image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
