@@ -139,6 +139,12 @@ The control raises:
 
 ---
 
+## Screenshot
+
+![K2 Annotation Control SCreenshot](annotation.png "Screenshot")
+
+---
+
 ## 🧩 Example Real-World Scenario
 
 ### ✅ Defect Tagging in a QA Process
